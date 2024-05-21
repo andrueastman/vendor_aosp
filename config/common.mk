@@ -69,7 +69,7 @@ TARGET_FACE_UNLOCK_SUPPORTED ?= $(TARGET_SUPPORTS_64_BIT_APPS)
 
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
 PRODUCT_PACKAGES += \
-    FaceUnlock
+    ParanoidSense
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.face.sense_service=true
@@ -130,10 +130,6 @@ include vendor/aosp/config/bootanimation.mk
 # BtHelper
 PRODUCT_PACKAGES += \
     BtHelper
-
-# Build Manifest
-PRODUCT_PACKAGES += \
-    build-manifest
 
 # Charger
 PRODUCT_PACKAGES += \
